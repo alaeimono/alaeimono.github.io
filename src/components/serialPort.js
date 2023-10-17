@@ -22,7 +22,7 @@ const SerialPortReader = () => {
   const handleSelectComPort = async () => {
     try{
       const port = await navigator.serial.requestPort();
-      await port.open({ baudRate: 115200 });
+      await port.open({ baudRate: baudRate });
       const reader = port.readable.getReader();
       setSensorIsConnected(true);
       readLines(reader);
