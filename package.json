@@ -1,7 +1,6 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "http://alaeimono.github.io/alaeimono.github.io",
   "private": true,
   "dependencies": {
     "@canvasjs/charts": "^3.7.23",

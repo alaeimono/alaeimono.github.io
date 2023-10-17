@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import Chart from "./sensorChart";
+// import Chart from "./sensorChart";
 import CarImage from "./carImage";
 
 const SerialPortReader = () => {
@@ -68,6 +68,7 @@ function getCurrentTime() {
         const gyroZ = parseFloat(dataParts[5].split(':')[1]);
         const time = getCurrentTime();
         // console.log(line);
+        
         setData((prevState) => prevState + "\n" + line);
 
         setSensorValues({ time:time, AccX: accX, AccY: accY, AccZ: accZ, GyroX: gyroX, GyroY: gyroY, GyroZ: gyroZ });
