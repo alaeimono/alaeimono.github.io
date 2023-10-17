@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/alaeimono.github.io/static/css/main.0eca8728.css",
+    "main.js": "/alaeimono.github.io/static/js/main.803cc502.js",
+    "static/js/787.cda612ba.chunk.js": "/alaeimono.github.io/static/js/787.cda612ba.chunk.js",
+    "static/media/gray-car.svg": "/alaeimono.github.io/static/media/gray-car.80507cd7684ed5740e1d4add3f9143f2.svg",
+    "static/media/blue-car.svg": "/alaeimono.github.io/static/media/blue-car.c01ed8c4d22b78077264e4b1cd917af7.svg",
+    "static/media/logo.svg": "/alaeimono.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/alaeimono.github.io/index.html",
+    "main.0eca8728.css.map": "/alaeimono.github.io/static/css/main.0eca8728.css.map",
+    "main.803cc502.js.map": "/alaeimono.github.io/static/js/main.803cc502.js.map",
+    "787.cda612ba.chunk.js.map": "/alaeimono.github.io/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0eca8728.css",
+    "static/js/main.803cc502.js"
+  ]
+}
