@@ -13,6 +13,12 @@ const SerialPortReader = () => {
                                                       GyroZ:0 }); 
   const [sensorIsConnected, setSensorIsConnected] = useState(false);
   const [data, setData] = useState("");
+  const [baudRate, setBaudRate] = useState(115200);
+
+  const handleSetBaudRate = (newBaudRate)=>{
+    setBaudRate(newBaudRate);
+  }
+
   const handleSelectComPort = async () => {
     try{
       const port = await navigator.serial.requestPort();
@@ -84,14 +90,14 @@ function getCurrentTime() {
       </button>
   </div>
   <div className="input-group d-flex align-items-center justify-content-center mt-2" >
-        <input type="text" className="form-control" width="25%" aria-label="Baud Rate" value={115200}/>
+        <input type="text" className="form-control" width="25%" aria-label="Baud Rate" placeholder="BaudRate" value={baudRate} onChange={(e)=>handleSetBaudRate(e.target.value)}/>
   </div>
   <div key="Acc-Row" className="row">
     <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
       <div hidden={sensorIsConnected ? false : true}>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1"></label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" value={data}></textarea>
+      <div className="form-group">
+        <label >Data</label>
+        <textarea className="form-control" rows="20" value={data} readOnly></textarea>
       </div>
         {/* <Chart key="AccX" name="AccX" lineColor="red" time={sensorValues.time} value={sensorValues.AccX} />
         <Chart key="AccY" name="AccY" lineColor="blue" time={sensorValues.time} value={sensorValues.AccY} />

@@ -1,10 +1,13 @@
 import React , { Component} from 'react';
-import blue_car from '../static/svg/blue-car.svg';
-import gray_car from '../static/svg/gray-car.svg';
-
+// import blue_car from process.env.PUBLIC_URL + '/static/svg/blue-car.svg';
+// import gray_car from process.env.PUBLIC_URL + '/static/svg/gray-car.svg';
+const blue_car = process.env.PUBLIC_URL + '/static/svg/blue-car.svg';
+const gray_car = process.env.PUBLIC_URL + '/static/svg/gray-car.svg';
 class CarImage extends Component{
+    
     constructor(){
         super();
+       
         this.state = {
             img: gray_car,
             enabled:false,
